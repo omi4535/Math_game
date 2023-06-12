@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addition"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"
+
+        android:textColor="#0F64F8"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/button_border"
+        android:text="Addition"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/subtraction"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:textColor="#0F64F8"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="100dp"
+        android:text="Subtraction"
+        android:background="@drawable/button_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addition"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/multi"
+        android:layout_width="260dp"
+        android:background="@drawable/button_border"
+        android:textColor="#0F64F8"
+        android:textSize="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Multiplication"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtraction"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/about"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="248dp"
+        android:background="@drawable/button_border"
+        android:text="ABout"
+        android:textColor="#0F64F8"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtraction"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
